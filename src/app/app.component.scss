@@ -1,0 +1,58 @@
+@import "~src/styles/animations";
+
+$toolbar-height: 52px;
+$sm-toolbar-height: 40px;
+
+.sidenav-container {
+  height: calc(100% - #{$toolbar-height});
+
+  &.hide-nav {
+    .sidenav, .navbar {
+      display: none;
+    }
+  }
+
+  &.small {
+    height: calc(100% - #{$sm-toolbar-height});
+  }
+}
+
+.mat-drawer-content {
+  transition: margin-left 0.375s $cubic-bezier;
+}
+
+.menu-toggle-icon {
+  transition: transform 0.375s $cubic-bezier;
+
+  &.side-opened {
+    transform: rotate(90deg);
+  }
+}
+
+.sidenav {
+  width: 275px;
+  top: $toolbar-height !important;
+
+  &.small {
+    width: 60px;
+  }
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.navbar.mat-toolbar-row, .mat-toolbar-single-row {
+  height: $toolbar-height;
+}
+
+@media(max-width: 599px) {
+  .sidenav {
+    top: $sm-toolbar-height !important;
+  }
+  .navbar.mat-toolbar-row, .mat-toolbar-single-row {
+    height: $sm-toolbar-height;
+  }
+}

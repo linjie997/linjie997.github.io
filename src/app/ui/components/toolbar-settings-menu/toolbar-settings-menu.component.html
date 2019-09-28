@@ -1,0 +1,13 @@
+<button mat-icon-button [matMenuTriggerFor]="menu" class="settings">
+  <mat-icon [inline]="true">settings</mat-icon>
+</button>
+<mat-menu #menu="matMenu" class="menu-container">
+  <div (click)="$event.stopPropagation()" class="menu-content">
+    <div mat-menu-item class="d-flex align-center theme-container">
+      <mat-icon>palette</mat-icon>
+      <span>{{'dark_theme'}}</span>
+      <span class="spacer"></span>
+      <mat-slide-toggle class="ml-8" (change)="themeToggle()" color="primary" [checked]="isDarkThemeEnabled"></mat-slide-toggle>
+    </div>
+  </div>
+</mat-menu>
