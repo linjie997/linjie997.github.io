@@ -1,0 +1,18 @@
+.container {
+  padding: 8px;
+}
+
+.mat-card-subtitle {
+  margin-bottom: 0;
+}
+
+.avatar {
+  cursor: pointer;
+  font-size: 0;
+
+  &:not(.ng-lazyloaded) {
+    background-image: linear-gradient(90deg, #e8e8e8 0px, #fafafa 40px, #e8e8e8 80px);
+    background-size: 600px;
+    animation: skeleton-animation 1.2s ease-in-out infinite;
+  }
+}

@@ -1,4 +1,4 @@
-@import "~src/styles/icon-size";
+@import "~src/styles/mixins/icon-size";
 
 .settings{
   @include icon-size(24px);

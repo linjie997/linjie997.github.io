@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import {
-  MatButtonModule,
+  MatButtonModule, MatCardModule,
   MatIconModule,
   MatListModule,
   MatMenuModule,
@@ -18,6 +18,7 @@ import { SideNavigationMenuComponent } from './ui/components/side-navigation-men
 import { ToolbarSettingsMenuComponent } from './ui/components/toolbar-settings-menu/toolbar-settings-menu.component';
 import { ToolbarComponent } from './ui/components/toolbar/toolbar.component';
 import { IndexComponent } from './ui/pages/index/index.component';
+import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,8 @@ import { IndexComponent } from './ui/pages/index/index.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+
+    // region Material Modules
     MatIconModule,
     MatButtonModule,
     MatSidenavModule,
@@ -39,6 +42,12 @@ import { IndexComponent } from './ui/pages/index/index.component';
     MatMenuModule,
     MatSlideToggleModule,
     MatListModule,
+    MatCardModule,
+    // endregion
+
+    // region External dependencies
+    LazyLoadImageModule
+    //
   ],
   providers: [],
   bootstrap: [

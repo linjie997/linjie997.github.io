@@ -1,6 +1,6 @@
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
+import { BehaviorSubject, Observable } from 'rxjs';
 import { DarkThemeClass } from '../../utils/storageKeys';
 import { StoreService } from '../store-service/store.service';
 
@@ -8,9 +8,11 @@ import { StoreService } from '../store-service/store.service';
   providedIn: 'root',
 })
 export class ThemeService {
-  
-  themeChange = new BehaviorSubject<any>(null);
-  
+
+  private darkThemeEnabled: boolean;
+  private darkThemeSubject = new BehaviorSubject<any>(null);
+  darkThemeEnabled$: Observable<boolean> = this.darkThemeSubject.asObservable();
+
   constructor(
     private overlayContainer: OverlayContainer,
     private store: StoreService,
@@ -20,24 +22,25 @@ export class ThemeService {
       this.changeTheme();
     }
   }
-  
+
   changeTheme() {
     if (this.overlayContainer.getContainerElement().classList.contains(DarkThemeClass)) {
       this.overlayContainer.getContainerElement().classList.remove(DarkThemeClass);
       document.body.classList.remove(DarkThemeClass);
-      this.store.toggleDarkTheme(false);
+      this.darkThemeEnabled = false;
     } else {
       this.overlayContainer.getContainerElement().classList.add(DarkThemeClass);
       document.body.classList.add(DarkThemeClass);
-      this.store.toggleDarkTheme(true);
+      this.darkThemeEnabled = true;
     }
-    this.themeChange.next(null);
+    this.store.toggleDarkTheme(this.darkThemeEnabled);
+    this.darkThemeSubject.next(this.darkThemeEnabled);
   }
-  
+
   checkDarkThemeEnabled(): boolean {
     return this.store.checkDarkThemeEnabled();
   }
-  
+
   private hasDarkThemeSaved(): boolean {
     const themeSaved = this.store.hasDarkThemeSaved();
     if (!themeSaved) {
@@ -45,7 +48,7 @@ export class ThemeService {
     }
     return themeSaved;
   }
-  
+
   private checkUserPlatformColorSchemePreferences() {
     if (matchMedia('(prefers-color-scheme: dark)').matches) {
       this.store.toggleDarkTheme(true);

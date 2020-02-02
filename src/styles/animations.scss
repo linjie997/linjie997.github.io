@@ -61,3 +61,32 @@ $cubic-bezier: cubic-bezier(0.4, 0.0, 0.2, 1);
     width: 180px;
   }
 }
+
+
+@keyframes skeleton-animation {
+  0% {
+    background-position: -32px;
+  }
+  40%, 100% {
+    background-position: 300px;
+  }
+}
+
+@keyframes lazy-loaded-image-animation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  25% {
+    opacity: .5;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: .75;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
