@@ -1,4 +1,10 @@
 export const strings = {
-  'it': '',
-  'en': '',
+  'dark_theme': {
+    'it': 'Tema scuro',
+    'en': 'Dark theme',
+  },
+  '': {
+    'it': '',
+    'en': '',
+  },
 };

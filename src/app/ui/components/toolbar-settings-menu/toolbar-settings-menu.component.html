@@ -5,7 +5,7 @@
   <div (click)="$event.stopPropagation()" class="menu-content">
     <div mat-menu-item class="d-flex align-center theme-container">
       <mat-icon>palette</mat-icon>
-      <span>{{'dark_theme'}}</span>
+      <span>{{'dark_theme' | translate}}</span>
       <span class="spacer"></span>
       <mat-slide-toggle class="ml-8" (change)="themeToggle()" color="primary" [checked]="isDarkThemeEnabled"></mat-slide-toggle>
     </div>
