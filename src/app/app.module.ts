@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TranslatePipe } from './pipes/translate.pipe';
 import { SideNavigationMenuComponent } from './ui/components/side-navigation-menu/side-navigation-menu.component';
 import { ToolbarSettingsMenuComponent } from './ui/components/toolbar-settings-menu/toolbar-settings-menu.component';
 import { ToolbarComponent } from './ui/components/toolbar/toolbar.component';
@@ -22,11 +23,17 @@ import { LazyLoadImageModule } from 'ng-lazyload-image';
 
 @NgModule({
   declarations: [
+    // region Components
     AppComponent,
     IndexComponent,
     SideNavigationMenuComponent,
     ToolbarComponent,
     ToolbarSettingsMenuComponent,
+    // endregion
+
+    // region Pipes
+    TranslatePipe
+    // endregion
   ],
   imports: [
     BrowserModule,
