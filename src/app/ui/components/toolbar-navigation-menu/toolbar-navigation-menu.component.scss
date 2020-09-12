@@ -1,0 +1,11 @@
+.link {
+  font-size: 16px;
+  font-weight: 400;
+
+  &.active {
+    font-weight: 500;
+    border-bottom: 2px solid #fff;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}

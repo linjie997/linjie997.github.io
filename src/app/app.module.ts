@@ -19,6 +19,7 @@ import { SideNavigationMenuComponent } from './ui/components/side-navigation-men
 import { ToolbarSettingsMenuComponent } from './ui/components/toolbar-settings-menu/toolbar-settings-menu.component';
 import { ToolbarComponent } from './ui/components/toolbar/toolbar.component';
 import { IndexComponent } from './ui/pages/index/index.component';
+import { ToolbarNavigationMenuComponent } from './ui/components/toolbar-navigation-menu/toolbar-navigation-menu.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { IndexComponent } from './ui/pages/index/index.component';
 
     // region Pipes
     TranslatePipe,
+    ToolbarNavigationMenuComponent,
     // endregion
   ],
   imports: [

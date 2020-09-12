@@ -1,16 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { IndexComponent } from './ui/pages/index/index.component';
+import { NavigationLinks } from './utils/navigationLinks';
 
 
 const routes: Routes = [
-  {
-    path: '',
-    component: IndexComponent,
-  },
+  ...NavigationLinks,
   {
     path: '**',
-    redirectTo: '',
+    redirectTo: 'home',
   },
 ];
 

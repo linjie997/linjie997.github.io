@@ -1,9 +1,14 @@
 @import "~src/styles/animations";
 
-$toolbar-height: 52px;
+$toolbar-height: 50px;
 $sm-toolbar-height: 40px;
 
+.title {
+  margin-right: 16px;
+}
+
 .sidenav-container {
+  transition: height 0.175s $cubic-bezier;
   height: calc(100% - #{$toolbar-height});
 
   &.hide-nav {
@@ -13,7 +18,14 @@ $sm-toolbar-height: 40px;
   }
 
   &.small {
-    height: calc(100% - #{$sm-toolbar-height});
+
+    &:not(.toolbar-hidden) {
+      height: calc(100% - #{$sm-toolbar-height});
+    }
+  }
+
+  &.toolbar-hidden {
+    height: 100%;
   }
 }
 
@@ -42,6 +54,15 @@ $sm-toolbar-height: 40px;
   position: sticky;
   top: 0;
   z-index: 2;
+  color: #fff;
+  background: rgb(25, 118, 210);
+  background: linear-gradient(180deg, rgba(25, 118, 210, 1) 50%, rgba(25, 118, 210, 0.9) 100%);
+  overflow: hidden;
+  transition: height 0.175s $cubic-bezier;
+
+  &.hide {
+    height: 0;
+  }
 }
 
 .navbar.mat-toolbar-row, .mat-toolbar-single-row {

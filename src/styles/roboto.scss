@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: local('Roboto Light'), local('Roboto-Light'), url('/assets/roboto/Roboto-Light.ttf') format('truetype');
+  src: local('Roboto Light'), local('Roboto-Light'), url('~src/assets/roboto/Roboto-Light.ttf') format('truetype');
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('Roboto'), local('Roboto-Regular'), url('/assets/roboto/Roboto-Regular.ttf') format('truetype');
+  src: local('Roboto'), local('Roboto-Regular'), url('~src/assets/roboto/Roboto-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -19,5 +19,5 @@
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url('/assets/roboto/Roboto-Medium.ttf') format('truetype');
+  src: local('Roboto Medium'), local('Roboto-Medium'), url('~src/assets/roboto/Roboto-Medium.ttf') format('truetype');
 }

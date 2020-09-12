@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { TranslatorSetup } from '../../models/translator-setup';
+import { TranslatorSetup } from '../../models';
 
 @Injectable({
   providedIn: 'root',
@@ -8,7 +8,7 @@ import { TranslatorSetup } from '../../models/translator-setup';
 export class TranslatorService {
 
   private storeKey = `linjie997.github.io-translator-saved-language`;
-  private strings: { [key: string]: any };
+  private strings: { [key: string]: { [key: string]: string } };
 
   private readonly languages = {
     'it': 'Italiano',
@@ -59,7 +59,7 @@ export class TranslatorService {
     }
   }
 
-  addStrings(strings: { [key: string]: any }) {
+  addStrings(strings: { [key: string]: { [key: string]: string } }) {
     this.strings = {...this.strings, ...strings};
   }
 
@@ -82,8 +82,8 @@ export class TranslatorService {
 
   getString(string: string, language?: string): string {
     const lang: string = language ? language.substring(0, 2) : this.langCode;
-    if (this.strings && this.strings[string]) {
-      return this.strings[string][lang] ?? this.strings[string]['it'] ?? this.cleanString(string);
+    if (this.strings) {
+      return this.strings[string] ? (this.strings[string][lang] ?? this.strings[string]['it']) : this.cleanString(string);
     } else {
       return string;
     }

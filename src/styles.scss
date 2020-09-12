@@ -1,8 +1,11 @@
 @import '~src/styles/theme';
+@import '~src/styles/dark-additions';
 @import '~src/styles/utils';
 @import '~src/styles/squarify';
 @import '~src/styles/roboto';
 @import '~src/styles/icons';
+@import '~src/styles/variables/colors';
+@import '~src/styles/app-loading';
 
 html, body {
   height: 100%;
@@ -11,4 +14,17 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+
+  &::-webkit-scrollbar-thumb {
+    background-color: darken($color-primary, 5%);
+  }
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: #fafafa;
+  }
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.33);
+  }
 }
