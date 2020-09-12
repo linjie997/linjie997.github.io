@@ -3,7 +3,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { TranslatorSetup } from '../../models/translator-setup';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class TranslatorService {
 
@@ -27,11 +27,10 @@ export class TranslatorService {
   private supportedLanguages: string[];
   private displayedLanguages: string[];
 
-  private languageSubject: BehaviorSubject<string> = new BehaviorSubject<string>(this.language);
-  language$: Observable<string> = this.languageSubject.asObservable();
+  private languageSubject$: BehaviorSubject<string> = new BehaviorSubject<string>(null);
+  language$: Observable<string> = this.languageSubject$.asObservable();
 
-  constructor(
-  ) {
+  constructor() {
   }
 
   setup(setup: TranslatorSetup) {
@@ -72,7 +71,7 @@ export class TranslatorService {
       if (this.supportedLanguages.find(l => l === langCode)) {
         this.language = language;
         this.langCode = language.substring(0, 2);
-        this.languageSubject.next(langCode);
+        this.languageSubject$.next(langCode);
         this.saveLanguage(language);
         return true;
       } else {
@@ -84,7 +83,7 @@ export class TranslatorService {
   getString(string: string, language?: string): string {
     const lang: string = language ? language.substring(0, 2) : this.langCode;
     if (this.strings && this.strings[string]) {
-      return this.strings[string][lang] ? this.strings[string][lang] : this.strings[string]['it'] ? this.strings[string]['it'] : this.cleanString(string);
+      return this.strings[string][lang] ?? this.strings[string]['it'] ?? this.cleanString(string);
     } else {
       return string;
     }
