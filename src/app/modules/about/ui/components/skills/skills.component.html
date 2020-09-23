@@ -1,0 +1,4 @@
+<div *ngFor="let skill of skills; let i = index" class="skill-bar">
+  <div class="name">{{skill.name}}</div>
+  <div class="rating" [ngClass]="'rating-'+skill.rating">{{skill.rating}}%</div>
+</div>

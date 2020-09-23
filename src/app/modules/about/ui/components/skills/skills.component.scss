@@ -1,0 +1,32 @@
+@import "~src/styles/variables/colors";
+
+.skill-bar {
+  display: flex;
+  background-color: #eee;
+  margin-bottom: 8px;
+
+  .name {
+    width: 175px;
+    font-weight: 500;
+    background-color: $color-accent;
+  }
+
+  .rating {
+    flex: 1 1 auto;
+    text-align: right;
+    color: #666;
+  }
+
+  .name, .rating {
+    padding: 4px 8px;
+  }
+}
+
+@for $i from 1 through 100 {
+  $percentage: $i*1%;
+  $empty: (100 - $i)*1%;
+
+  .rating-#{$i} {
+    background: linear-gradient(90deg, darken($color-accent, 10%) $percentage, rgba(25, 118, 210, 0) $empty)
+  }
+}

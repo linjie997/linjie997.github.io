@@ -1,0 +1,29 @@
+@import "~src/styles/variables/colors";
+@import "~src/styles/animations";
+
+.page {
+  height: calc(100% - 32px);
+  display: flex;
+}
+
+.container {
+  animation: slide-down-all $cubic-bezier 0.5s;
+
+  display: grid;
+  grid-template-areas: "presentation skills";
+  grid-template-rows: auto auto;
+  grid-template-columns: 40% auto;
+  grid-gap: 16px;
+
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+}
+
+.self-brief-presentation {
+  grid-area: presentation;
+}
+
+.skills {
+  grid-area: skills;
+}

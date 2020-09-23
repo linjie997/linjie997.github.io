@@ -27,6 +27,10 @@ export const strings = {
     'it': 'I miei contatti',
     'en': 'My contacts',
   },
+  'who_am_i': {
+    'it': 'Chi sono?',
+    'en': 'Who am I?',
+  },
   '': {
     'it': '',
     'en': '',

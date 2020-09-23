@@ -3,11 +3,11 @@ import { Skill } from '../../../../shared/models/skill';
 import { SkillsService } from '../../../../shared/services/skills-service/skills.service';
 
 @Component({
-  selector: 'app-about-page',
-  templateUrl: './about-page.component.html',
-  styleUrls: ['./about-page.component.scss'],
+  selector: 'app-skills',
+  templateUrl: './skills.component.html',
+  styleUrls: ['./skills.component.scss']
 })
-export class AboutPageComponent implements OnInit {
+export class SkillsComponent implements OnInit {
 
   skills: Skill[] = [];
 
@@ -26,4 +26,5 @@ export class AboutPageComponent implements OnInit {
       this.skills = skills;
     });
   }
+
 }
