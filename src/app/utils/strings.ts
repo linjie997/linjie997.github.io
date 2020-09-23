@@ -15,9 +15,17 @@ export const strings = {
     'it': 'Chi sono',
     'en': 'About me',
   },
-  'contacts': {
-    'it': 'Contatti',
-    'en': 'Contacts',
+  'links_and_contacts': {
+    'it': 'Link e Contatti',
+    'en': 'Link and Contacts',
+  },
+  'email_copied': {
+    'it': 'Email copiata',
+    'en': 'Email copied',
+  },
+  'my_contacts': {
+    'it': 'I miei contatti',
+    'en': 'My contacts',
   },
   '': {
     'it': '',

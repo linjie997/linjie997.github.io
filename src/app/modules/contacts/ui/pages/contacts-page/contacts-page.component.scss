@@ -1,0 +1,33 @@
+@import "~src/styles/animations";
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  max-width: 768px;
+  width: 100%;
+  animation: slide-down-all $cubic-bezier 0.5s;
+}
+
+.mat-card-title {
+  font-size: 24px;
+}
+
+.button-container {
+  padding: 8px;
+}
+
+.button {
+  max-width: 150px;
+  width: 100%;
+  text-align: left;
+  padding: 4px 16px;
+
+  .mat-icon {
+    margin-right: 8px;
+  }
+}

@@ -28,7 +28,7 @@ export const NavigationLinks: NavigationLink[] = [
   {
     path: 'contacts',
     icon: 'contact_mail',
-    name: 'contacts',
+    name: 'links_and_contacts',
     loadChildren: () => import('./../modules/contacts/contacts.module').then(m => m.ContactsModule),
   },
 ];

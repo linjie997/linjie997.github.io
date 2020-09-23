@@ -1,1 +1,30 @@
-<p>contacts-page works!</p>
+<div class="container">
+
+  <mat-card class="card">
+    <mat-card-header>
+    <mat-card-title>{{'my_contacts' | translate}}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <div class="button-container">
+        <a mat-stroked-button class="button" target="_self" [href]="emailToAction" [cdkCopyToClipboard]="email" (cdkCopyToClipboardCopied)="onEmailCopied()">
+          <mat-icon>email</mat-icon>
+          <span>E-mail</span>
+        </a>
+      </div>
+      <div class="button-container">
+        <a mat-stroked-button class="button" target="_blank" [href]="linkedIn">
+          <mat-icon svgIcon="linkedin"></mat-icon>
+          <span>LinkedIn</span>
+        </a>
+      </div>
+      <div class="button-container">
+        <a mat-stroked-button class="button" target="_blank" [href]="github">
+          <mat-icon svgIcon="github"></mat-icon>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+</div>
