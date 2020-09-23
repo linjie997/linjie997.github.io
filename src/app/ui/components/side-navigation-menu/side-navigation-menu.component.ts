@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavigationLink } from '../../../models';
-import { NavigationLinks } from '../../../utils/navigationLinks';
+import { NavigationLinks } from '../../../utils/navigation-links';
 
 @Component({
   selector: 'app-side-navigation-menu',

@@ -1,7 +1,7 @@
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { DarkThemeClass } from '../../utils/storageKeys';
+import { DarkThemeClass } from '../../utils/storage-keys';
 import { StoreService } from '../store-service/store.service';
 
 @Injectable({

@@ -6,7 +6,7 @@ import { debounceTime, map, take } from 'rxjs/operators';
 import { TranslatorSetup } from './models';
 import { ToolbarService } from './services/toolbar-service/toolbar.service';
 import { TranslatorService } from './services/translator-service/translator.service';
-import { AppConfig } from './utils/appConfig';
+import { AppConfig } from './utils/app-config';
 import { strings } from './utils/strings';
 
 @Component({
