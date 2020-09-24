@@ -10,10 +10,17 @@
   max-height: 200px;
   width: auto;
   border-radius: 2px;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .me-title {
   font-size: 2em;
   font-weight: 500;
+}
+
+.description {
+  text-align: center;
+  line-height: 18px;
+  padding: 4px;
+  opacity: 0.9;
 }

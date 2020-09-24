@@ -2,22 +2,25 @@
 @import "~src/styles/animations";
 
 .page {
-  height: calc(100% - 32px);
+  height: 100%;
   display: flex;
+  flex-direction: column;
+  padding: 8px;
 }
 
-.container {
+.self-top-card {
   animation: slide-down-all $cubic-bezier 0.5s;
 
   display: grid;
   grid-template-areas: "presentation skills";
-  grid-template-rows: auto auto;
-  grid-template-columns: 40% auto;
+  grid-template-rows: auto;
+  grid-template-columns: 400px auto;
   grid-gap: 16px;
 
   max-width: 1200px;
   width: 100%;
   margin: auto;
+  overflow: hidden;
 }
 
 .self-brief-presentation {
@@ -26,4 +29,16 @@
 
 .skills {
   grid-area: skills;
+}
+
+@media(max-width: 960px) {
+  .self-top-card {
+    grid-template-areas:
+      "presentation presentation"
+      "skills skills";
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+
+    max-width: 768px;
+  }
 }

@@ -14,7 +14,9 @@ html, body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
+.mat-drawer-content {
   &::-webkit-scrollbar-thumb {
     background-color: darken($color-primary, 5%);
   }

@@ -31,6 +31,26 @@ export const strings = {
     'it': 'Chi sono?',
     'en': 'Who am I?',
   },
+  'a_developer': {
+    'it': 'Uno sviluppatore',
+    'en': 'A developer',
+  },
+  'years_old': {
+    'it': 'Anni',
+    'en': 'Years old',
+  },
+  'a_tech_enthusiastic': {
+    'it': 'Un appassionato di tecnologia',
+    'en': 'A tech enthusiastic',
+  },
+  'my_name_is': {
+    'it': 'Il mio nome è',
+    'en': 'My name is',
+  },
+  'a_dreamer': {
+    'it': 'Un sognatore',
+    'en': 'A dreamer',
+  },
   '': {
     'it': '',
     'en': '',

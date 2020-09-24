@@ -18,9 +18,8 @@ $sm-toolbar-height: 40px;
   }
 
   &.small {
-
     &:not(.toolbar-hidden) {
-      height: calc(100% - #{$sm-toolbar-height});
+      //height: calc(100% - #{$sm-toolbar-height});
     }
   }
 

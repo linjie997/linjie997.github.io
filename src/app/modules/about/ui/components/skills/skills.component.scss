@@ -1,9 +1,39 @@
 @import "~src/styles/variables/colors";
+@import "~src/styles/animations";
+
+:host {
+  display: block;
+  height: 100%;
+}
+
+@keyframes skill-bar-animation {
+  0% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.self-top-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
 
 .skill-bar {
   display: flex;
   background-color: #eee;
-  margin-bottom: 8px;
+  opacity: 0;
+  animation: normal forwards skill-bar-animation 0.75s $cubic-bezier;
+  user-select: none;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
 
   .name {
     width: 175px;
@@ -28,5 +58,11 @@
 
   .rating-#{$i} {
     background: linear-gradient(90deg, darken($color-accent, 10%) $percentage, rgba(25, 118, 210, 0) $empty)
+  }
+}
+
+@for $i from 0 through 25 {
+  .skill-bar-#{$i} {
+    animation-delay: 0.5s + ($i * 50ms);
   }
 }
