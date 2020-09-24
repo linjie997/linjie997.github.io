@@ -40,7 +40,6 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "outputPath": "docs",
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -118,6 +117,10 @@
               "devServerTarget": "linjie997-github-io:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     }
