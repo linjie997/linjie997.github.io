@@ -51,6 +51,18 @@ export const strings = {
     'it': 'Un sognatore',
     'en': 'A dreamer',
   },
+  'technology_passionated_since_ever': {
+    'it': 'Appassionato di tecnologia da sempre',
+    'en': 'Technology passionated since ever',
+  },
+  'development_passion_discovered_description': {
+    'it': 'Ho scoperto il mondo dello sviluppo software durante le scuole superiori, per me non è solo lavoro ma anche passione',
+    'en': 'I discovered the software development world during my high school days, for me it\'s not only work but also a passion' ,
+  },
+  'i_love_discovering_and_learn_new_things': {
+    'it': 'Mi piace scoprire ed imparare cose nuove, specialmente nel campo tecnologico',
+    'en': 'I love discovering and learning new things, expecially in the technology field',
+  },
   '': {
     'it': '',
     'en': '',
