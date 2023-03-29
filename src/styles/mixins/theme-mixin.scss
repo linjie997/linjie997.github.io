@@ -1,4 +1,4 @@
-@import '~@angular/material/theming';
+@import '@angular/material/theming';
 
 @mixin theme($primary, $accent, $warn) {
   @include mat-core();
