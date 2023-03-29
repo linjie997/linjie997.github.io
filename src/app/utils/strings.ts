@@ -63,6 +63,38 @@ export const strings = {
     'it': 'Mi piace scoprire ed imparare cose nuove, specialmente nel campo tecnologico',
     'en': 'I love discovering and learning new things, expecially in the technology field',
   },
+  'location': {
+    'it': 'Località',
+    'en': 'Location',
+  },
+  'email': {
+    'it': 'Email',
+    'en': 'E-mail',
+  },
+  'gender': {
+    'it': 'Genere',
+    'en': 'Gender',
+  },
+  'male': {
+    'it': 'Uomo',
+    'en': 'Male',
+  },
+  'citizenship': {
+    'it': 'Nazionalità',
+    'en': 'Citizenship',
+  },
+  'italian': {
+    'it': 'Italiano',
+    'en': 'Ialian',
+  },
+  'profile_presentation_title': {
+    'it': 'Profilo',
+    'en': 'Profile',
+  },
+  'profile_presentation_text': {
+    'it': 'TBD',
+    'en': 'TBD',
+  },
   '': {
     'it': '',
     'en': '',

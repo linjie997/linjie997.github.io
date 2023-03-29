@@ -1,0 +1,19 @@
+<mat-card class="card">
+  <mat-card-title-group>
+    <mat-card-title>{{workExperience.title}}</mat-card-title>
+    <mat-card-subtitle>
+      <a mat-button [href]="workExperience.companyLink" target="_blank">{{workExperience.company}}</a>
+      <br>
+      <span>{{workExperience.date[0]| date: 'MMMM YYYY'}} - {{workExperience.date[1]| date: 'MMMM YYYY'}}</span>
+    </mat-card-subtitle>
+  </mat-card-title-group>
+  <mat-card-content>
+    <p class="description">{{workExperience.description}}</p>
+    <mat-chip-list aria-label="skills" class="badges">
+      <mat-chip
+        *ngFor="let badge of workExperience.badges; let odd = odd" [color]="odd ? 'primary': 'accent'"
+        selected>{{badge}}
+      </mat-chip>
+    </mat-chip-list>
+  </mat-card-content>
+</mat-card>

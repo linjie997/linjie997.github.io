@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Observable} from 'rxjs';
+import {WorkExperience} from '../../../../../models';
+import {WorkExperiencesService} from '../../../../../services/work-experiences-service/work-experiences.service';
 
 @Component({
   selector: 'app-work-experiences-page',
@@ -7,9 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkExperiencesPageComponent implements OnInit {
 
-  constructor() { }
+  workExperiences$: Observable<WorkExperience[]>;
+
+  constructor(
+    private workExperiencesService: WorkExperiencesService
+  ) {
+  }
 
   ngOnInit(): void {
+    this.workExperiences$ = this.workExperiencesService.workExperiences$;
   }
 
 }
