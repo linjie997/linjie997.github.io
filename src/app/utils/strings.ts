@@ -92,8 +92,26 @@ export const strings = {
     'en': 'Profile',
   },
   'profile_presentation_text': {
-    'it': 'TBD',
-    'en': 'TBD',
+    'it': 'Hello everyone,\n' +
+      '\n' +
+      'My name is Jie, and I am a 25-year-old web developer. I love coding, from creating new stuff to evolving existing projects. My main areas of expertise are Angular and React.\n' +
+      'When I\'m not coding or designing websites, I love to spend my free time pursuing my hobbies. I am passionate about music, and exploring different genres of music. I also love gaming, during the last years I play Overwatch in my free time.\n' +
+      '\n' +
+      'But my love for sports is also a big part of my life, especially basketball. I find it a great way to stay active and de-stress.\n' +
+      'Additionally, I enjoy spending time with my friends, whether it\'s grabbing a drink, trying out new restaurants or just hanging out around together.\n' +
+      '\n' +
+      'I keep a balance between work and personal life since I think is is very important.\n' +
+      'My hobbies and interests keep me grounded, and I find that they help me empty my mind when need to recharge and be ready for new challenges in my life and in my work.',
+    'en': 'Hello everyone,\n' +
+      '\n' +
+      'My name is Jie, and I am a 25-year-old web developer. I love coding, from creating new stuff to evolving existing projects. My main areas of expertise are Angular and React.\n' +
+      'When I\'m not coding or designing websites, I love to spend my free time pursuing my hobbies. I am passionate about music, and exploring different genres of music. I also love gaming, during the last years I play Overwatch in my free time.\n' +
+      '\n' +
+      'But my love for sports is also a big part of my life, especially basketball. I find it a great way to stay active and de-stress.\n' +
+      'Additionally, I enjoy spending time with my friends, whether it\'s grabbing a drink, trying out new restaurants or just hanging out around together.\n' +
+      '\n' +
+      'I keep a balance between work and personal life since I think is is very important.\n' +
+      'My hobbies and interests keep me grounded, and I find that they help me empty my mind when need to recharge and be ready for new challenges in my life and in my work.',
   },
   '': {
     'it': '',
