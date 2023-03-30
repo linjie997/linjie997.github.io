@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Software Consultant - Frontend presso Kirey Group",
+    "description": "Consulente software in ambito banking presso Unicredit.\n\nDeveloper e frontend team leader.\nPosizione remota in un contesto internazionale con metodologia Agile.\nCredit Process Simplification. Semplificazione e digitalizzazione di processi manuali.\n\nCustom React styleguide library. Libreria di componenti custom, compliant alle specifiche del brand book.\n",
+    "date": [
+      "2021-07-31T22:00:00.000Z"
+    ],
+    "badges": [
+      "React (17)",
+      "Angular (7-12)",
+      "Material Angular",
+      "NgRx",
+      "Microfrontend",
+      "Custom libraries",
+      "Storybook",
+      "i18n",
+      "Vite.js",
+      "Unit test",
+      "Jest",
+      "Git",
+      "Bitbucket",
+      "Jira",
+      "Jenkins",
+      "CD/CI",
+      "Docker",
+      "Spring boot",
+      "Nginx"
+    ],
+    "company": "Kirey Group",
+    "companyLink": "https://kireygroup.com/"
+  },
+  {
+    "title": "Frontend developer presso Planet SRL",
+    "description": "Integrazione di API REST documentate tramite OpenAPI Specifications, verso frontend basati su framework symfony, webpack e principalmente Angular2.\nCreazione di interfacce e portali dedicati a video streaming on demand e live, con ricerche, paginazioni, arricchimento contenuti con metadati video, tracce, commenti.\nCreazione interfacce gestionali backend per i contenuti video, di cui modifiche si riflettono sui portali pubblici.\n",
+    "date": [
+      "2017-10-31T22:00:00.000Z",
+      "2021-07-31T22:00:00.000Z"
+    ],
+    "badges": [
+      "Angular (4-12)",
+      "Material Angular",
+      "Custom libraries",
+      "i18n",
+      "Webpack",
+      "C#",
+      ".NET",
+      "PHP",
+      "Twig/Symfony",
+      "Git",
+      "Docker",
+      "Nginx",
+      "Linux",
+      "Powershell scripting"
+    ],
+    "company": "Planet SRL",
+    "companyLink": "https://www.garavot.com/"
+  }
+]
