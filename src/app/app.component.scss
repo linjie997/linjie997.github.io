@@ -8,7 +8,7 @@ $sm-toolbar-height: 40px;
 }
 
 .sidenav-container {
-  // height: calc(100% - #{$toolbar-height});
+  height: calc(100% - #{$toolbar-height});
 
   &.hide-nav {
     .sidenav, .navbar {
