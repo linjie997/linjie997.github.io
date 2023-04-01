@@ -103,7 +103,7 @@ export const strings = {
       '\n' +
       'Inoltre, mi piace passare il tempo con i miei amici, che si tratti di prendere un drink, andare fuori a mangiare o semplicemente stare insieme. Cerco di mantenere un equilibrio tra lavoro e vita privata perché ritengo che sia molto importante.\n' +
       '\n' +
-      'I miei hobby e interessi mi rendono sereno e mi aiutano a svuotare la mente quando ho bisogno di ricaricarmi e di essere pronta per nuove sfide nella mia vita e nel mio lavoro.',
+      'I miei hobby e interessi mi rendono sereno e mi aiutano a svuotare la mente quando ho bisogno di ricaricarmi e di essere pronto per nuove sfide nella mia vita e nel mio lavoro.',
     'en': 'Hello everyone,\n' +
       '\n' +
       'My name is Jie, and I am a 25-year-old web developer. I love coding, from creating new stuff to evolving existing projects. My main areas of expertise are Angular and React.\n' +
