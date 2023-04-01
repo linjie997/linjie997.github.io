@@ -1,7 +1,10 @@
 [
   {
-    "title": "Software Consultant - Frontend presso Kirey Group",
-    "description": "Consulente software in ambito banking presso Unicredit.\n\nDeveloper e frontend team leader.\nPosizione remota in un contesto internazionale con metodologia Agile.\nCredit Process Simplification. Semplificazione e digitalizzazione di processi manuali.\n\nCustom React styleguide library. Libreria di componenti custom, compliant alle specifiche del brand book.\n",
+    "title": "Software Consultant - Frontend - Kirey Group",
+    "descriptions": [
+      "Consulente software in ambito banking presso Unicredit.\n\nFrontend Developer.\n\nCredit Process Simplification. Semplificazione e digitalizzazione di processi manuali.\nPosizione remota in un contesto internazionale con metodologia Agile, con regolari trasferte all'estero presso il cliente.\nSviluppo di applicativo per raccolta di informazioni del cliente per valutazione del processo creditizio.\n\nOltre allo sviluppo del codice, ho avuto ruoli attivi in tutto il ciclo dello sviluppo e l'ideazione dell'applicativo all'interno del team tra cui:\n- Guida del daily meeting (Agile)\n- Stretto contatto con il business per definire e stimare user stories\n- Definizione di specifiche tecniche\n- Pianificazione e analisi tecniche a diretto contatto con business analysts e technical leader\n- Testing e bugfix\n- Mentoring di figure junior/medior affiancate\n- Code review del codice\n- Versioning del codice per CI/CD\n\nLe tecnologie da me usate in questo progetto sono state principalmente React, Jest, OpenAPI Specification (Swagger), Postman, Vite.js e Storybook.\nOltre a queste ultime, ho avuto possibilità anche di prendere parte ad attività che richiedevano l'uso e la conoscenza di Jenkins, Docker, nginx, Spring-boot, Liquibase (SQL), Google cloud platform.",
+      "Custom React styleguide library.\nLibreria di componenti custom, compliant alle specifiche del brand book.\nSet di componenti React, usati da diversi progetti interni del cliente con obiettivo di uniformare il design di tutti gli applicativi.\n\nLe soluzioni tecniche usate sono Vite.js, Storybook e Jest."
+    ],
     "date": [
       "2021-07-31T22:00:00.000Z"
     ],
@@ -30,8 +33,10 @@
     "companyLink": "https://kireygroup.com/"
   },
   {
-    "title": "Frontend developer presso Planet SRL",
-    "description": "Integrazione di API REST documentate tramite OpenAPI Specifications, verso frontend basati su framework symfony, webpack e principalmente Angular2.\nCreazione di interfacce e portali dedicati a video streaming on demand e live, con ricerche, paginazioni, arricchimento contenuti con metadati video, tracce, commenti.\nCreazione interfacce gestionali backend per i contenuti video, di cui modifiche si riflettono sui portali pubblici.\n",
+    "title": "Frontend developer - Planet SRL",
+    "descriptions": [
+      "Frontend Developer.\n\nSviluppo di soluzioni Video on Demand e Live streaming, con video player custom e arricchimento di metadati.\n\nSviluppo di portali pubblici dedicati agli utenti finali, sviluppo di gestionali che si interfaccia con le API del backend per la gestione dei contenuti.\nSviluppo di video player custom basato su video.js.\nSviluppo di API in .NET Core per raccolta e analytics dei dati interrogando Elastic Search.\n\nLe tecnologie usate sono state Typescript, Angular (5-12), Webpack, OpenAPI Specification (Swagger), C#, .NET Core, Elastic Search, nginx, Docker, OAuth2, Powershell, Linux, PHP, Symfony, Twig."
+    ],
     "date": [
       "2017-10-31T22:00:00.000Z",
       "2021-07-31T22:00:00.000Z"

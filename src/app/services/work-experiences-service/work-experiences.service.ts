@@ -1,7 +1,7 @@
 import {Injectable} from '@angular/core';
 import {BehaviorSubject, Observable} from 'rxjs';
 import {WorkExperience} from '../../models';
-import {TranslatorService} from '../../modules/shared/services/translator-service/translator.service';
+import {TranslatorService} from '../translator-service/translator.service';
 import {HttpClient} from '@angular/common/http';
 import {map} from 'rxjs/operators';
 
@@ -27,7 +27,6 @@ export class WorkExperiencesService {
       this.workExperiencesSubject$.next(this.storedWorkExperiencesByLanguage[language]);
     } else {
       this.getWorkExperiencesByLanguage(language).subscribe((response: WorkExperience[]) => {
-        console.log(response);
         this.storedWorkExperiencesByLanguage[language] = response;
         this.workExperiencesSubject$.next(response);
       });
@@ -36,10 +35,7 @@ export class WorkExperiencesService {
 
   private getWorkExperiencesByLanguage(language: string): Observable<WorkExperience[]> {
     return this.http.get(`/assets/work-${language}.json`).pipe(
-      map((response) => (response as WorkExperience[]).map(item => ({
-        ...item,
-        date: item.date.length < 2 ? item.date.concat(new Date()) : item.date
-      })))
+      map((response) => (response as WorkExperience[]))
     );
   }
 }

@@ -4,7 +4,7 @@ import { MatSidenav } from '@angular/material/sidenav';
 import { Observable } from 'rxjs';
 import { debounceTime, map, take } from 'rxjs/operators';
 import { TranslatorSetup } from './models';
-import { TranslatorService } from './modules/shared/services/translator-service/translator.service';
+import { TranslatorService } from './services/translator-service/translator.service';
 import { ToolbarService } from './services/toolbar-service/toolbar.service';
 import { AppConfig } from './utils/app-config';
 import { strings } from './utils/strings';

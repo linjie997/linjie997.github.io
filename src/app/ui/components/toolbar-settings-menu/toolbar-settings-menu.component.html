@@ -7,7 +7,22 @@
       <mat-icon>palette</mat-icon>
       <span>{{'dark_theme' | translate}}</span>
       <span class="spacer"></span>
-      <mat-slide-toggle class="ml-8" (change)="themeToggle()" color="primary" [checked]="isDarkThemeEnabled"></mat-slide-toggle>
+      <mat-slide-toggle class="ml-8" (change)="themeToggle()" color="primary"
+                        [checked]="isDarkThemeEnabled"></mat-slide-toggle>
     </div>
   </div>
+
+  <button mat-menu-item [matMenuTriggerFor]="languages" class="item">
+    <mat-icon class="action-icon">translate</mat-icon>
+    <span>{{'language' | translate}}</span>
+  </button>
+</mat-menu>
+
+<mat-menu #languages="matMenu">
+  <button mat-menu-item *ngFor="let language of availableLanguages" (click)="changeLanguage(language)">
+          <span [ngClass]="{'language--selected' : language === (language$ | async)}">
+            <mat-icon class="language-icon" [svgIcon]="language"></mat-icon>
+            <span>{{language | displayLanguage}}</span>
+          </span>
+  </button>
 </mat-menu>

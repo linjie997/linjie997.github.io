@@ -1,6 +1,6 @@
 export interface WorkExperience {
   title?: string;
-  description?: string;
+  descriptions?: string[];
   company?: string;
   companyLink?: string;
   badges?: string[];

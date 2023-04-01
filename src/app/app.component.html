@@ -1,4 +1,4 @@
-<mat-toolbar class="navbar mat-elevation-z1" [ngClass]="{hide: !(showToolbar$ | async)}">
+<mat-toolbar class="navbar mat-elevation-z1">
   <button
     *ngIf="(isHandset$ | async)"
     (click)="matSideNav?.toggle()"

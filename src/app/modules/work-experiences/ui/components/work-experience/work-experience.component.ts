@@ -7,12 +7,30 @@ import {WorkExperience} from '../../../../../models';
   styleUrls: ['./work-experience.component.scss']
 })
 export class WorkExperienceComponent implements OnInit {
-  @Input() workExperience: WorkExperience;
+  private _workExperience: WorkExperience;
+
+  get workExperience(): WorkExperience {
+    return this._workExperience;
+  }
+
+  @Input() set workExperience(workExperience: WorkExperience) {
+    this._workExperience = workExperience;
+    this.updateDates();
+  }
+
+  startDate: Date;
+  endDate: Date;
 
   constructor() {
   }
 
   ngOnInit(): void {
+  }
+
+  private updateDates(): void {
+    const [startDate, endDate] = this.workExperience.date;
+    this.startDate = startDate;
+    this.endDate = endDate;
   }
 
 }

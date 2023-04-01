@@ -1,4 +1,4 @@
-import { NavigationLink } from '../models';
+import {NavigationLink} from '../models';
 
 export const NavigationLinks: NavigationLink[] = [
   {
@@ -7,12 +7,12 @@ export const NavigationLinks: NavigationLink[] = [
     name: 'home',
     loadChildren: () => import('./../modules/home/home.module').then(m => m.HomeModule),
   },
-  {
-    path: 'about',
-    icon: 'face',
-    name: 'about_me',
-    loadChildren: () => import('./../modules/about/about.module').then(m => m.AboutModule),
-  },
+  // {
+  //  path: 'about',
+  //  icon: 'face',
+  //  name: 'about_me',
+  //  loadChildren: () => import('./../modules/about/about.module').then(m => m.AboutModule),
+  // },
   {
     path: 'work-experiences',
     icon: 'work',
@@ -20,11 +20,17 @@ export const NavigationLinks: NavigationLink[] = [
     loadChildren: () => import('./../modules/work-experiences/work-experiences.module').then(m => m.WorkExperiencesModule),
   },
   {
-    path: 'personal-life',
-    icon: 'gamepad',
-    name: 'personal_life',
-    loadChildren: () => import('./../modules/personal-life/personal-life.module').then(m => m.PersonalLifeModule),
+    path: 'open-source-work',
+    icon: 'work',
+    name: 'open_source_work',
+    loadChildren: () => import('./../modules/open-source-work/open-source-work.module').then(m => m.OpenSourceWorkModule),
   },
+  // {
+  //  path: 'personal-life',
+  //  icon: 'gamepad',
+  //  name: 'personal_life',
+  //  loadChildren: () => import('./../modules/personal-life/personal-life.module').then(m => m.PersonalLifeModule),
+  // },
   {
     path: 'contacts',
     icon: 'contact_mail',

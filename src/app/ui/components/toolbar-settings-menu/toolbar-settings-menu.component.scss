@@ -1,5 +1,9 @@
 @import "~src/styles/mixins/icon-size";
 
-.settings{
+.settings {
   @include icon-size(24px);
+}
+
+.language--selected {
+  font-weight: 500;
 }

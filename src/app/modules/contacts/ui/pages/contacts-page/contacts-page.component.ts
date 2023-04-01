@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { AppConfig } from '../../../../../utils/app-config';
-import { ToastService } from '../../../../shared/services/toast-service/toast.service';
-import { TranslatorService } from '../../../../shared/services/translator-service/translator.service';
+import { ToastService } from '../../../../../services/toast-service/toast.service';
+import { TranslatorService } from '../../../../../services/translator-service/translator.service';
 
 @Component({
   selector: 'app-contacts-page',

@@ -88,20 +88,22 @@ export const strings = {
     'en': 'Ialian',
   },
   'profile_presentation_title': {
-    'it': 'Profilo',
-    'en': 'Profile',
+    'it': 'Su di me',
+    'en': 'About me',
   },
   'profile_presentation_text': {
-    'it': 'Hello everyone,\n' +
+    'it': 'Ciao a tutti, mi chiamo Jie e sono uno sviluppatore web di 25 anni.\n' +
+      'Amo il coding, dalla creazione di nuove cose all\'evoluzione di progetti esistenti.\n' +
+      'Le mie principali aree di competenza sono Angular e React.\n' +
       '\n' +
-      'My name is Jie, and I am a 25-year-old web developer. I love coding, from creating new stuff to evolving existing projects. My main areas of expertise are Angular and React.\n' +
-      'When I\'m not coding or designing websites, I love to spend my free time pursuing my hobbies. I am passionate about music, and exploring different genres of music. I also love gaming, during the last years I play Overwatch in my free time.\n' +
+      'Quando non sono impegnato nello sviluppo, amo trascorrere il mio tempo libero dedicandomi ai miei hobby.\n' +
+      'Sono appassionato di musica ed esploro diversi generi musicali. Mi piacciono molto anche i videogiochi, negli ultimi anni gioco in particolare a Overwatch nel mio tempo libero.\n' +
       '\n' +
-      'But my love for sports is also a big part of my life, especially basketball. I find it a great way to stay active and de-stress.\n' +
-      'Additionally, I enjoy spending time with my friends, whether it\'s grabbing a drink, trying out new restaurants or just hanging out around together.\n' +
+      'Ma anche l\'amore per lo sport è una parte importante della mia vita, soprattutto la pallacanestro. Oltre ad essere un grande appassionato di NBA, trovo una partitella al campetto sia un ottimo modo per mantenersi attivi e rilassarsi.\n' +
       '\n' +
-      'I keep a balance between work and personal life since I think is is very important.\n' +
-      'My hobbies and interests keep me grounded, and I find that they help me empty my mind when need to recharge and be ready for new challenges in my life and in my work.',
+      'Inoltre, mi piace passare il tempo con i miei amici, che si tratti di prendere un drink, andare fuori a mangiare o semplicemente stare insieme. Cerco di mantenere un equilibrio tra lavoro e vita privata perché ritengo che sia molto importante.\n' +
+      '\n' +
+      'I miei hobby e interessi mi rendono sereno e mi aiutano a svuotare la mente quando ho bisogno di ricaricarmi e di essere pronta per nuove sfide nella mia vita e nel mio lavoro.',
     'en': 'Hello everyone,\n' +
       '\n' +
       'My name is Jie, and I am a 25-year-old web developer. I love coding, from creating new stuff to evolving existing projects. My main areas of expertise are Angular and React.\n' +
@@ -112,6 +114,14 @@ export const strings = {
       '\n' +
       'I keep a balance between work and personal life since I think is is very important.\n' +
       'My hobbies and interests keep me grounded, and I find that they help me empty my mind when need to recharge and be ready for new challenges in my life and in my work.',
+  },
+  'open_source_work': {
+    'it': 'Lavori open source',
+    'en': 'Open source work',
+  },
+  'today': {
+    'it': 'Oggi',
+    'en': 'Today',
   },
   '': {
     'it': '',

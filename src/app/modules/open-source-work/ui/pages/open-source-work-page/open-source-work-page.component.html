@@ -1,0 +1,5 @@
+<div class="page">
+  <ng-container *ngFor="let openSourceWork of (openSourceWork$ | async)">
+    <app-open-source-work [openSourceWork]="openSourceWork"></app-open-source-work>
+  </ng-container>
+</div>

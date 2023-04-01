@@ -4,11 +4,13 @@
     <mat-card-subtitle>
       <a mat-button [href]="workExperience.companyLink" target="_blank">{{workExperience.company}}</a>
       <br>
-      <span>{{workExperience.date[0]| date: 'MMMM YYYY'}} - {{workExperience.date[1]| date: 'MMMM YYYY'}}</span>
+      <span>{{startDate| date: 'MMMM YYYY'}} - </span>
+      <span *ngIf="endDate">{{endDate | date: 'MMMM YYYY'}}</span>
+      <span *ngIf="!endDate">{{'today' | translate}}</span>
     </mat-card-subtitle>
   </mat-card-title-group>
   <mat-card-content>
-    <p class="description">{{workExperience.description}}</p>
+    <p *ngFor="let description of workExperience.descriptions" class="description">{{description}}</p>
     <mat-chip-list aria-label="skills" class="badges">
       <mat-chip
         *ngFor="let badge of workExperience.badges; let odd = odd" [color]="odd ? 'primary': 'accent'"

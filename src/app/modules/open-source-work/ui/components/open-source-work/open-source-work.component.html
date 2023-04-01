@@ -1,0 +1,13 @@
+<mat-card class="card">
+  <mat-card-title-group>
+    <mat-card-title>{{openSourceWork.title}}</mat-card-title>
+  </mat-card-title-group>
+  <mat-card-content>
+    <p *ngFor="let description of openSourceWork.descriptions" class="description">{{description}}</p>
+    <div class="links">
+      <div *ngFor="let referenceLink of openSourceWork.links">
+        <a mat-button [href]="referenceLink.link" target="_blank">{{referenceLink.title}}</a>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

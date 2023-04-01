@@ -2,7 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
-import { Skill } from '../../models/skill';
+import { Skill } from '../../modules/shared/models/skill';
 
 @Injectable({
   providedIn: 'root',

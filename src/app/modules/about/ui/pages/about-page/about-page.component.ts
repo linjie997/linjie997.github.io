@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Skill } from '../../../../shared/models/skill';
-import { SkillsService } from '../../../../shared/services/skills-service/skills.service';
+import { SkillsService } from '../../../../../services/skills-service/skills.service';
 
 @Component({
   selector: 'app-about-page',
