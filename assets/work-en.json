@@ -1,2 +1,63 @@
 [
+  {
+    "title": "Software Consultant - Frontend - Kirey Group",
+    "descriptions": [
+      "Software consultant in banking sector at Unicredit.\n\nFrontend Developer.\n\nCredit Process Simplification. Simplification and digitalization of manual processes.\nRemote position in an international context working with Agile methodology, with regular work trip abroad at the client.\nDevelopment of an application to gather information from the customers for credit process.\n\nIn addition to code development, I had active roles throughout the development cycle and application ideation within the team including:\n- Leading the daily meeting (Agile)\n- Close contact with the business to define and estimate user stories\n- Defining technical solutions\n- Technical planning and analysis in direct contact with business analysts and the technical leader\n- Testing and bugfixes\n- Mentoring of junior/medior colleagues side-by-side\n- Code review\n- Versioning of code for CI/CD\n\nThe technologies I used in this project were mainly React, Jest, OpenAPI Specification (Swagger), Postman, Vite.js, and Storybook.\nIn addition to the latter, I also had opportunities to take part in activities that required the use and knowledge of Jenkins, Docker, nginx, Spring-boot, Liquibase (SQL), Google cloud platform.",
+      "Custom React styleguide library.\nLibrary of custom components, compliant with brand book specifications.\nSet of React components, used by several internal customer projects with goal of standardizing the design of all applications.\n\nThe technical solutions used are Vite.js, Storybook and Jest."
+    ],
+    "date": [
+      "2021-07-31T22:00:00.000Z"
+    ],
+    "badges": [
+      "React (17)",
+      "Angular (7-12)",
+      "Material Angular",
+      "NgRx",
+      "Microfrontend",
+      "Custom libraries",
+      "Storybook",
+      "i18n",
+      "Vite.js",
+      "Unit test",
+      "Jest",
+      "Git",
+      "Bitbucket",
+      "Jira",
+      "Jenkins",
+      "CD/CI",
+      "Docker",
+      "Spring boot",
+      "Nginx"
+    ],
+    "company": "Kirey Group",
+    "companyLink": "https://kireygroup.com/"
+  },
+  {
+    "title": "Frontend developer - Planet SRL",
+    "descriptions": [
+      "Frontend Developer.\n\nDevelopment of Video on Demand and Live streaming solutions, with custom video player and metadata enrichment.\n\nDevelopment of public portals dedicated to end users, management development that interfaces with backend APIs for content management.\nDevelopment of custom video player based on video.js.\nDevelopment of API in .NET Core for data collection and analytics by querying Elastic Search.\n\nThe technologies I used were Typescript, Angular (5-12), Webpack, OpenAPI Specification (Swagger), C#, .NET Core, Elastic Search, nginx, Docker, OAuth2, Powershell, Linux, PHP, Symfony, Twig."
+    ],
+    "date": [
+      "2017-10-31T22:00:00.000Z",
+      "2021-07-31T22:00:00.000Z"
+    ],
+    "badges": [
+      "Angular (4-12)",
+      "Material Angular",
+      "Custom libraries",
+      "i18n",
+      "Webpack",
+      "C#",
+      ".NET",
+      "PHP",
+      "Twig/Symfony",
+      "Git",
+      "Docker",
+      "Nginx",
+      "Linux",
+      "Powershell scripting"
+    ],
+    "company": "Planet SRL",
+    "companyLink": "https://www.garavot.com/"
+  }
 ]

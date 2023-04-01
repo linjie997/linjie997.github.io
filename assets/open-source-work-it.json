@@ -1,0 +1,18 @@
+[
+  {
+    "title": "angular-auth-oidc-client",
+    "descriptions": [
+      "Ho lavorato nel progetto angular-auth-oidc-client rimuovendo una dipendenza, jsrsasign (289.3kB), rimpiazzandola con le API standard del browser riducendo il bundle della libreria in modo importante.\n\nCon il mio contributo, è stato implementata la API del browser window.Crypto per operazioni di crittografia a basso livello.\n\nL'implementazione riguarda la validazione dei Json Web Token (JWT) con diversi algoritmi."
+    ],
+    "links": [
+      {
+        "title": "https://github.com/damienbod/angular-auth-oidc-client",
+        "link": "https://github.com/damienbod/angular-auth-oidc-client"
+      },
+      {
+        "title": "Pull Request del mio contributo",
+        "link": "https://github.com/damienbod/angular-auth-oidc-client/pull/1220"
+      }
+    ]
+  }
+]
